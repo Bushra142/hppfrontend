@@ -78,7 +78,9 @@
             ><img src="~/assets/icons/yt.svg"
           /></a>
 
-          <a href="#!" class="cta-primary outlined small">Get a Quote</a>
+          <a href="#!" class="trust-pilot"
+            ><img src="~/assets/images/trustpilot.svg" alt="Trustpilot logo"
+          /></a>
         </div>
       </div>
     </div>
@@ -99,6 +101,7 @@ export default {
   background: #f2f2f2;
   border-radius: 30px;
   padding: 50px;
+  padding-bottom: 20px;
   .entry {
   }
   .two-parts {
@@ -158,6 +161,11 @@ export default {
         filter: brightness(0);
         img {
           height: 18px;
+        }
+      }
+      .trust-pilot {
+        img {
+          width: 120px;
         }
       }
     }
