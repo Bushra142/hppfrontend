@@ -1,0 +1,107 @@
+/* Home page */
+.usps .card {
+  border: 0;
+  background-color: transparent;
+}
+.usps .card .card-header {
+  border: 0;
+  background: none;
+  padding: 0;
+}
+
+.tabs .card-header .card-header-pills {
+  margin: 0;
+}
+
+.tabs .card-header li {
+  margin-right: 20px;
+}
+.tabs .tab-content {
+  margin-top: 30px;
+}
+.tabs .tab-content .tab-pane {
+  padding: 0;
+}
+
+.usp-review {
+  display: flex;
+  height: 450px;
+  border-radius: 30px;
+}
+.usp-review .text-part {
+  padding: 50px;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.usp-review .text-part h3 {
+  font-family: "BodyRegular";
+}
+.usp-review .text-part h3 span {
+  font-size: 14px;
+  display: block;
+}
+.usp-review .image-part {
+  flex-basis: 50%;
+}
+.usp-review .image-part img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.service-tabs .nav-tabs {
+  border: 0;
+}
+.service-tabs .services .nav-tabs .nav-link {
+  margin: 0;
+  border: 0;
+}
+.service-tabs .services .nav-tabs .nav-link.active {
+  border-bottom: 1px solid #7157f8;
+}
+
+.service-tabs .services .nav-tabs .nav-item {
+  margin-right: 20px;
+}
+.service-tabs .tabs .tab-content .tab-pane {
+  display: flex;
+  gap: 20px;
+}
+
+.faq-section .single-faq {
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.125) !important;
+  border-radius: 10px;
+}
+.faq-section .custom-toggle {
+  padding: 30px;
+  font-size: 18px;
+  font-family: "BodyMedium";
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.faq-section .custom-pane {
+  padding: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.faq-section .custom-toggle::after {
+  content: "+";
+  color: black;
+  float: right;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.faq-section .custom-toggle.not-collapsed::after {
+  content: "-";
+}

@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "BodyBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Montserrat-Bold"), url("Montserrat-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BodyLight";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Montserrat-Light"), url("Montserrat-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BodyMedium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Montserrat-SemiBold"),
+    url("Montserrat-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BodyRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Montserrat-Regular"),
+    url("Montserrat-Regular.woff") format("woff");
+}

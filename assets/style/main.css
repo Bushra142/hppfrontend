@@ -1,0 +1,174 @@
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: #7157f8;
+  color: white;
+}
+
+* {
+  font-family: "BodyRegular";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1 {
+  font-family: "BodyMedium";
+  font-size: 40px;
+}
+
+span,
+a {
+  font-family: "BodyRegular";
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "BodyMedium";
+  font-size: 28px;
+}
+h2 span {
+  font-family: "BodyMedium";
+  font-size: 28px;
+}
+
+h3 {
+  font-family: "BodyMedium";
+  font-size: 25px;
+}
+
+h4 {
+  font-family: "BodyMedium";
+  font-size: 20px;
+}
+
+p {
+  font-family: "BodyRegular";
+  font-size: 18px;
+}
+
+ul {
+  font-family: "BodyRegular";
+}
+
+.page-width {
+  position: relative;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.page-width.fullw {
+  max-width: 100%;
+}
+
+.cta-primary {
+  padding: 15px 40px;
+  background-color: #7157f8;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.2s ease;
+  font-size: 18px;
+  border-radius: 10px;
+  line-height: 1em;
+}
+
+.cta-primary:hover {
+  background-color: black;
+  text-decoration: none;
+  color: white;
+}
+
+.cta-primary.outlined {
+  background-color: transparent;
+  border: 1px solid #7157f8;
+  color: #7157f8;
+}
+.cta-primary.outlined:hover {
+  background-color: #7157f8;
+  color: white;
+}
+.cta-primary.fullw {
+  display: block;
+}
+
+.cta-primary.small {
+  font-size: 14px;
+  padding: 15px 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.font-semi {
+  font-family: "BodyMedium";
+}
+
+.color-primary {
+  color: #7157f8;
+}
+.color-primary:hover {
+  color: #7157f8;
+}
+
+.color-gray {
+  color: #c5c5c5;
+}
+
+input {
+  border-radius: 10px !important;
+}
+
+a {
+  color: inherit;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #7157f8;
+}
+
+
+
+@media (max-width: 640px) {
+  .page-width {
+    padding: 0px 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+  h2 span {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
