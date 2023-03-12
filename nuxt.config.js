@@ -15,10 +15,16 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [ "~/assets/fonts/fontimport.css", "~/assets/style/main.css", "~/assets/style/home.css"],
+  css: [
+    "vue-slick-carousel/dist/vue-slick-carousel.css",
+    "vue-slick-carousel/dist/vue-slick-carousel-theme.css",
+    "~/assets/fonts/fontimport.css",
+    "~/assets/style/main.css",
+    "~/assets/style/home.css",
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: "~/plugins/VueFlickity.js", ssr: false }],
+  plugins: [{ src: "~/plugins/VueSlickCarousel.js", ssr: false }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

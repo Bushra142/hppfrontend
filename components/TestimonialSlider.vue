@@ -6,8 +6,8 @@
         <span class="color-gray"> Hear it straight from brands like yours</span>
       </h2>
       <p>Listen to what our customers have to say about us!</p>
+
       <client-only>
-        <!-- if you don't want to use the buttons Flickity provides -->
         <div class="flickity-controls">
           <img
             @click="previous()"
@@ -22,8 +22,8 @@
             class="custom-arrow"
           />
         </div>
-        <flickity ref="flickity" :options="flickityOptions">
-          <div class="carousel-cell testimonial-slide">
+        <VueSlickCarousel ref="carouselTesty" v-bind="slickOptions">
+          <div class="testimonial-slide">
             <img src="~/assets/images/citrix.svg" alt="Citrix Logo" />
             <p class="testi-text">
               Working with Travis was a great experience. He was on the ball and
@@ -40,7 +40,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-cell testimonial-slide">
+          <div class="testimonial-slide">
             <img src="~/assets/images/netflix.svg" alt="netflix Logo" />
             <p class="testi-text">
               Working with Travis was a great experience. He was on the ball and
@@ -57,7 +57,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-cell testimonial-slide">
+          <div class="testimonial-slide">
             <img src="~/assets/images/samsung.svg" alt="samsung Logo" />
             <p class="testi-text">
               Working with Travis was a great experience. He was on the ball and
@@ -74,7 +74,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-cell testimonial-slide">
+          <div class="testimonial-slide">
             <img src="~/assets/images/telogis.svg" alt="telogis Logo" />
             <p class="testi-text">
               Working with Travis was a great experience. He was on the ball and
@@ -91,7 +91,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-cell testimonial-slide">
+          <div class="testimonial-slide">
             <img src="~/assets/images/loews.svg" alt="loews Logo" />
             <p class="testi-text">
               Working with Travis was a great experience. He was on the ball and
@@ -108,7 +108,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-cell testimonial-slide">
+          <div class="testimonial-slide">
             <img src="~/assets/images/citrix.svg" alt="Citrix Logo" />
             <p class="testi-text">
               Working with Travis was a great experience. He was on the ball and
@@ -125,7 +125,7 @@
               </div>
             </div>
           </div>
-        </flickity>
+        </VueSlickCarousel>
       </client-only>
     </div>
   </div>
@@ -136,22 +136,24 @@ export default {
   name: "TestimonialSlider",
   data() {
     return {
-      flickityOptions: {
+      slickOptions: {
+        slidesToShow: 4.2,
+        centerMode: false,
         adaptiveHeight: true,
-        prevNextButtons: false,
-        pageDots: false,
-        wrapAround: true,
-        groupCells: 3,
+        arrows: false,
+        infinite: false,
+        variableWidth: false,
+        swipeToSlide: true,
       },
     };
   },
   methods: {
     next() {
-      this.$refs.flickity.next();
+      this.$refs.carouselTesty.next();
     },
 
     previous() {
-      this.$refs.flickity.previous();
+      this.$refs.carouselTesty.prev();
     },
   },
 };
@@ -179,11 +181,11 @@ export default {
   height: 450px;
   border-radius: 20px;
   margin-right: 20px;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   justify-content: space-between;
   gap: 30px;
-  width: 350px;
+  // width: 350px;
   padding: 30px;
   > img {
     width: 100%;
@@ -220,22 +222,22 @@ export default {
     }
   }
 }
-.testimonial-slide:nth-child(1) {
+.testimonial-slider .slick-slide:nth-child(1n) .testimonial-slide {
   background: #ffeae9;
 }
-.testimonial-slide:nth-child(2) {
+.testimonial-slider .slick-slide:nth-child(2n) .testimonial-slide {
   background: #d9d2ff;
 }
-.testimonial-slide:nth-child(3) {
+.testimonial-slider .slick-slide:nth-child(3n) .testimonial-slide {
   background: #fff3e9;
 }
-.testimonial-slide:nth-child(4) {
+.testimonial-slider .slick-slide:nth-child(4n) .testimonial-slide {
   background: #e9f3ff;
 }
-.testimonial-slide:nth-child(5) {
+.testimonial-slider .slick-slide:nth-child(5n) .testimonial-slide {
   background: #ebf2dd;
 }
-.testimonial-slide:nth-child(6) {
+.testimonial-slider .slick-slide:nth-child(6n) .testimonial-slide {
   background: #ffeae9;
 }
 </style>

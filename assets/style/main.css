@@ -39,6 +39,15 @@ h2 span {
   font-family: "BodyMedium";
   font-size: 28px;
 }
+.h2 {
+  font-family: "BodyMedium";
+  font-size: 28px;
+}
+
+.h2 span {
+  font-family: "BodyMedium";
+  font-size: 28px;
+}
 
 h3 {
   font-family: "BodyMedium";
@@ -136,13 +145,14 @@ input {
 a {
   color: inherit;
 }
+.nav-link:hover {
+  color: #7157f8;
+}
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   background-color: #7157f8;
 }
-
-
 
 @media (max-width: 640px) {
   .page-width {
@@ -157,6 +167,13 @@ a {
     font-size: 24px;
   }
   h2 span {
+    font-size: 24px;
+  }
+  .h2 {
+    font-size: 24px;
+  }
+
+  .h2 span {
     font-size: 24px;
   }
 

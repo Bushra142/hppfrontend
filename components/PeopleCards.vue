@@ -55,7 +55,7 @@ export default {
       flex-basis: 50%;
       border-radius: 20px;
       padding: 30px;
-      background: url(/_nuxt/assets/images/hellobg.webp), #f2f2f2;
+      background: url(~/assets/images/hellobg.webp), #f2f2f2;
       background-size: 450px;
       background-repeat: no-repeat;
       background-position: bottom;

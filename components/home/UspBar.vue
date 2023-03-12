@@ -36,6 +36,8 @@ export default {
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   .review-logos {
     img {
       max-width: 400px;

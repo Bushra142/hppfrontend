@@ -2,14 +2,14 @@
   <div class="page-width">
     <div class="video-sect">
       <div class="entry text-center">
-        <iframe
+        <!-- <iframe
           style="aspect-ratio: 16/9; width: 80%"
           src="https://www.youtube.com/embed/GmDOvGXpUTA"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen=""
-        ></iframe>
+        ></iframe> -->
         <h2>Total packaging success with 360° half price packaging approach</h2>
       </div>
       <div class="unique-usps">

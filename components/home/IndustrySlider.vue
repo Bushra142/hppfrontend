@@ -6,73 +6,65 @@
         <span class="color-gray">solutions by industry needs</span>
       </h2>
       <p>Make the most of your niche with our best collection</p>
-      <client-only>
-        <!-- if you don't want to use the buttons Flickity provides -->
-        <div class="flickity-controls">
-          <img
-            @click="previous()"
-            src="~/assets/icons/arrow-left.svg"
-            alt="Slide Back"
-            class="custom-arrow"
-          />
-          <img
-            @click="next()"
-            src="~/assets/icons/arrow-right.svg"
-            alt="Slide Next"
-            class="custom-arrow"
-          />
+
+      <div class="flickity-controls">
+        <img
+          @click="previous()"
+          src="~/assets/icons/arrow-left.svg"
+          alt="Slide Back"
+          class="custom-arrow"
+        />
+        <img
+          @click="next()"
+          src="~/assets/icons/arrow-right.svg"
+          alt="Slide Next"
+          class="custom-arrow"
+        />
+      </div>
+      <VueSlickCarousel ref="carouselIndustry" v-bind="slickOptions">
+        <div class="industry-slide">
+          <nuxt-link to="/" draggable="false">
+            <img src="~/assets/images/card.webp" alt="Card" draggable="false"  />
+            <h4 class="slide-title">Hello</h4>
+          </nuxt-link>
         </div>
-        <flickity ref="flickity" :options="flickityOptions">
-          <div class="carousel-cell industry-slide">
-            <nuxt-link to="/">
-              <img src="~/assets/images/card.webp" alt="Card" />
-              <h4 class="slide-title">Fashion</h4>
-            </nuxt-link>
-          </div>
-          <div class="carousel-cell industry-slide">
-            <nuxt-link to="/">
-              <img src="~/assets/images/card.webp" alt="Card" />
-              <h4 class="slide-title">Apparel</h4>
-            </nuxt-link>
-          </div>
-          <div class="carousel-cell industry-slide">
-            <nuxt-link to="/">
-              <img src="~/assets/images/card.webp" alt="Card" />
-              <h4 class="slide-title">Fashion & Apparel</h4>
-            </nuxt-link>
-          </div>
-          <div class="carousel-cell industry-slide">
-            <nuxt-link to="/">
-              <img src="~/assets/images/card.webp" alt="Card" />
-              <h4 class="slide-title">Test</h4>
-            </nuxt-link>
-          </div>
-          <div class="carousel-cell industry-slide">
-            <nuxt-link to="/">
-              <img src="~/assets/images/card.webp" alt="Card" />
-              <h4 class="slide-title">Hello</h4>
-            </nuxt-link>
-          </div>
-          <div class="carousel-cell industry-slide">
-            <nuxt-link to="/">
-              <img src="~/assets/images/card.webp" alt="Card" />
-              <h4 class="slide-title">What</h4>
-            </nuxt-link>
-          </div>
-          <div class="carousel-cell industry-slide">
-            <nuxt-link to="/">
-              <img src="~/assets/images/card.webp" alt="Card" />
-              <h4 class="slide-title">What</h4>
-            </nuxt-link>
-          </div>
-          <div class="carousel-cell industry-slide">
-            <nuxt-link to="/">
-              <img src="~/assets/images/card.webp" alt="Card" />
-              <h4 class="slide-title">What</h4>
-            </nuxt-link>
-          </div>
-        </flickity>
-      </client-only>
+        <div class="industry-slide">
+          <nuxt-link to="/" draggable="false">
+            <img src="~/assets/images/card.webp" alt="Card" draggable="false" />
+            <h4 class="slide-title">Hello</h4>
+          </nuxt-link>
+        </div>
+        <div class="industry-slide">
+          <nuxt-link to="/" draggable="false">
+            <img src="~/assets/images/card.webp" alt="Card" draggable="false" />
+            <h4 class="slide-title">Hello</h4>
+          </nuxt-link>
+        </div>
+        <div class="industry-slide">
+          <nuxt-link to="/" draggable="false">
+            <img src="~/assets/images/card.webp" alt="Card" draggable="false" />
+            <h4 class="slide-title">Hello</h4>
+          </nuxt-link>
+        </div>
+        <div class="industry-slide">
+          <nuxt-link to="/" draggable="false">
+            <img src="~/assets/images/card.webp" alt="Card" draggable="false" />
+            <h4 class="slide-title">Hello</h4>
+          </nuxt-link>
+        </div>
+        <div class="industry-slide">
+          <nuxt-link to="/" draggable="false">
+            <img src="~/assets/images/card.webp" alt="Card" draggable="false" />
+            <h4 class="slide-title">Hello</h4>
+          </nuxt-link>
+        </div>
+        <div class="industry-slide">
+          <nuxt-link to="/" draggable="false">
+            <img src="~/assets/images/card.webp" alt="Card" draggable="false" />
+            <h4 class="slide-title">Hello</h4>
+          </nuxt-link>
+        </div>
+      </VueSlickCarousel>
     </div>
   </div>
 </template>
@@ -80,24 +72,27 @@
 <script>
 export default {
   name: "IndustrySlider",
+
   data() {
     return {
-      flickityOptions: {
+      slickOptions: {
+        slidesToShow: 4.2,
+        centerMode: false,
         adaptiveHeight: true,
-        prevNextButtons: false,
-        pageDots: false,
-        wrapAround: true,
-        groupCells: 3,
+        arrows: false,
+        infinite: false,
+        variableWidth: false,
+        swipeToSlide: true,
       },
     };
   },
   methods: {
     next() {
-      this.$refs.flickity.next();
+      this.$refs.carouselIndustry.next();
     },
 
     previous() {
-      this.$refs.flickity.previous();
+      this.$refs.carouselIndustry.prev();
     },
   },
 };

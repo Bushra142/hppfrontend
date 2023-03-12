@@ -2,11 +2,10 @@
   <div class="page-width">
     <div class="insta-slider">
       <h2>
-        Find our works 
+        Find our works
         <span class="color-gray">on Instagram</span>
       </h2>
       <client-only>
-        <!-- if you don't want to use the buttons Flickity provides -->
         <div class="flickity-controls">
           <img
             @click="previous()"
@@ -21,48 +20,81 @@
             class="custom-arrow"
           />
         </div>
-        <flickity ref="flickity" :options="flickityOptions">
-          <div class="carousel-cell insta-slide">
-            <nuxt-link to="/">
-              <img src="~/assets/images/card.webp" alt="Card" />
+
+        <VueSlickCarousel ref="carouselInsta" v-bind="slickOptions">
+          <div class="insta-slide">
+            <nuxt-link to="/" draggable="false">
+              <img
+                src="~/assets/images/card.webp"
+                alt="Card"
+                draggable="false"
+              />
             </nuxt-link>
           </div>
-          <div class="carousel-cell insta-slide">
-            <nuxt-link to="/">
-              <img src="~/assets/images/card.webp" alt="Card" />
+          <div class="insta-slide">
+            <nuxt-link to="/" draggable="false">
+              <img
+                src="~/assets/images/card.webp"
+                alt="Card"
+                draggable="false"
+              />
             </nuxt-link>
           </div>
-          <div class="carousel-cell insta-slide">
-            <nuxt-link to="/">
-              <img src="~/assets/images/card.webp" alt="Card" />
+          <div class="insta-slide">
+            <nuxt-link to="/" draggable="false">
+              <img
+                src="~/assets/images/card.webp"
+                alt="Card"
+                draggable="false"
+              />
             </nuxt-link>
           </div>
-          <div class="carousel-cell insta-slide">
-            <nuxt-link to="/">
-              <img src="~/assets/images/card.webp" alt="Card" />
+          <div class="insta-slide">
+            <nuxt-link to="/" draggable="false">
+              <img
+                src="~/assets/images/card.webp"
+                alt="Card"
+                draggable="false"
+              />
             </nuxt-link>
           </div>
-          <div class="carousel-cell insta-slide">
-            <nuxt-link to="/">
-              <img src="~/assets/images/card.webp" alt="Card" />
+          <div class="insta-slide">
+            <nuxt-link to="/" draggable="false">
+              <img
+                src="~/assets/images/card.webp"
+                alt="Card"
+                draggable="false"
+              />
             </nuxt-link>
           </div>
-          <div class="carousel-cell insta-slide">
-            <nuxt-link to="/">
-              <img src="~/assets/images/card.webp" alt="Card" />
+          <div class="insta-slide">
+            <nuxt-link to="/" draggable="false">
+              <img
+                src="~/assets/images/card.webp"
+                alt="Card"
+                draggable="false"
+              />
             </nuxt-link>
           </div>
-          <div class="carousel-cell insta-slide">
-            <nuxt-link to="/">
-              <img src="~/assets/images/card.webp" alt="Card" />
+          <div class="insta-slide">
+            <nuxt-link to="/" draggable="false">
+              <img
+                src="~/assets/images/card.webp"
+                alt="Card"
+                draggable="false"
+              />
             </nuxt-link>
           </div>
-          <div class="carousel-cell insta-slide">
-            <nuxt-link to="/">
-              <img src="~/assets/images/card.webp" alt="Card" />
+          <div class="insta-slide">
+            <nuxt-link to="/" draggable="false">
+              <img
+                src="~/assets/images/card.webp"
+                alt="Card"
+                draggable="false"
+              />
             </nuxt-link>
           </div>
-        </flickity>
+        </VueSlickCarousel>
       </client-only>
     </div>
   </div>
@@ -73,22 +105,23 @@ export default {
   name: "InstaSlider",
   data() {
     return {
-      flickityOptions: {
+      slickOptions: {
+        slidesToShow: 4,
+        centerMode: true,
         adaptiveHeight: true,
-        prevNextButtons: false,
-        pageDots: false,
-        wrapAround: true,
-        groupCells: 3,
+        arrows: false,
+        infinite: true,
+        variableWidth: false,
       },
     };
   },
   methods: {
     next() {
-      this.$refs.flickity.next();
+      this.$refs.carouselInsta.next();
     },
 
     previous() {
-      this.$refs.flickity.previous();
+      this.$refs.carouselInsta.prev();
     },
   },
 };

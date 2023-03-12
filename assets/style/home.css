@@ -105,3 +105,38 @@
 .faq-section .custom-toggle.not-collapsed::after {
   content: "-";
 }
+
+/* L1 Page */
+.l-1-categories ul.nav-pills {
+  padding: 0;
+  background: none;
+}
+
+.l-1-categories ul.nav-pills li {
+  background: #eef1f2;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 0.1px solid #7070704f;
+}
+
+.l-1-categories .tabs .tab-content {
+  margin: 0;
+}
+
+/* .l-1-categories .tabs .tab-content .tab-pane {
+  text-align: center;
+} */
+
+.testimonial-slider .slick-slide {
+  padding: 0 10px !important;
+}
+
+.category-slider .slick-prev:before,
+.category-slider .slick-next:before {
+  color: #7157f8;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #7157f8;
+}
