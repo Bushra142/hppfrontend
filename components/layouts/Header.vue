@@ -72,33 +72,29 @@
         <HPPLogo />
       </div>
       <div class="menu">
-        <a data-toggle="collapse" href="#" data-target=".collapse" role="button">
-          <img
-            @click.stop="drawer = !drawer"
+        <b-button v-b-toggle.sidebar-no-header class="side-bar-icon"><img
             src="~/assets/icons/menuicon.svg"
             alt="Menu"
-          />
-        </a>
+          /></b-button>
+
+      <b-sidebar id="sidebar-no-header" aria-labelledby="sidebar-no-header-title" no-header shadow>
+      <template #default="{ hide }">
+        <div class="p-3">
+          <a href="#!" class="cta-primary outlined small">Get a Quote</a>
           
+          <nav class="mb-3">
+            <b-nav vertical>
+              <b-nav-item active @click="hide">Active</b-nav-item>
+              <b-nav-item href="#link-1" @click="hide">Link</b-nav-item>
+              <b-nav-item href="#link-2" @click="hide">Another Link</b-nav-item>
+            </b-nav>
+          </nav>
+          <b-button variant="primary" block @click="hide">Close Sidebar</b-button>
         </div>
+      </template>
+    </b-sidebar>
+          
     </div>
-    <div class="collapse">
-        <div class="w-sidebar navbar-collapse collapse sidebar">
-            <!-- fixed sidebar -->
-            <div class="w-sidebar">
-                <ul class="nav text-truncate">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </div>
     
      </div>
@@ -343,41 +339,19 @@ export default {
 .mobile-menu{
   display: block;
   margin-bottom: 25px;
-}
 
-.row.collapse,
-    .row.collapsing {
-        margin-left: 0 !important;
-        left: 0 !important;
-        overflow: visible;
+  .menu{
+    .side-bar-icon{
+      background: none;
+      border: none;
     }
-    
-    .row > .sidebar.collapse {
-        display: flex !important;
-        margin-left: -100% !important;
-        transition: all .3s linear;
-        position: fixed;
-        z-index: 1050;
-        max-width: 0;
-        min-width: 0;
-        flex-basis: auto;
+
+    a{
+      width: 100%;
+      text-align: center;
     }
-    
-    .row > .sidebar.collapse.show {
-        margin-left: 0 !important;
-        width: 100%;
-        max-width: 100%;
-        min-width: initial;
-    }
-    
-    .row > .sidebar.collapsing {
-        display: flex !important;
-        margin-left: -10% !important;
-        transition: all .3s linear !important;
-        position: fixed;
-        z-index: 1050;
-        min-width: initial;
-    }
+  }
+}
     
 }
 </style>

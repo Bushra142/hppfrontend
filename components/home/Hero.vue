@@ -3,7 +3,7 @@
     <div class="home-hero">
       <div class="text-part">
         <h1>
-          Make an impact in 2023
+          Make an Amazing impact in 2023 to onward with HPP
           <span>with easily customizable, sustainable packaging.</span>
         </h1>
         <a href="#!" class="cta-primary">Order Packaging</a>
