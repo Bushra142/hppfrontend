@@ -8,4 +8,10 @@
 .hpp-logo {
   width: 250px;
 }
+@media (max-width: 480px) {
+  .hpp-logo {
+  width: 160px;
+  }
+
+  }
 </style>
