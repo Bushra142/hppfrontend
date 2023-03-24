@@ -5,10 +5,10 @@
         <div class="top-bar page-width">
           <div class="menu">
             <ul>
-              <li><nuxt-link to="'/tuck'">Tuck Boxes</nuxt-link></li>
-              <li><nuxt-link to="'/tuck'">Mailer Boxes</nuxt-link></li>
-              <li><nuxt-link to="'/tuck'">CBD Boxes</nuxt-link></li>
-              <li><nuxt-link to="'/tuck'">Cosmetic Boxes</nuxt-link></li>
+              <li><nuxt-link to="/tuck">Tuck Boxes</nuxt-link></li>
+              <li><nuxt-link to="/tuck">Mailer Boxes</nuxt-link></li>
+              <li><nuxt-link to="/tuck">CBD Boxes</nuxt-link></li>
+              <li><nuxt-link to="/tuck">Cosmetic Boxes</nuxt-link></li>
             </ul>
           </div>
           <div class="cta">
@@ -41,17 +41,19 @@
             <li class="nav-link-c">Industries</li>
             <li class="nav-link-c">Shapes & Style</li>
             <li class="nav-link-c">
-              <nuxt-link to="'/material'">Material</nuxt-link>
+              <nuxt-link to="/material">Material</nuxt-link>
             </li>
             <li class="nav-link-c">
-              <nuxt-link to="'/portfolio'">Portfolio</nuxt-link>
-            </li>
-            <li class="nav-link-c"><NuxtLink to="/blog">Insights</NuxtLink></li>
-            <li class="nav-link-c">
-              <nuxt-link to="'/finishes'">Premium Finishes</nuxt-link>
+              <nuxt-link to="/portfolio">Portfolio</nuxt-link>
             </li>
             <li class="nav-link-c">
-              <nuxt-link to="'/about'">About</nuxt-link>
+              <nuxt-link to="/blog">Insights</nuxt-link>
+            </li>
+            <li class="nav-link-c">
+              <nuxt-link to="/finishes">Premium Finishes</nuxt-link>
+            </li>
+            <li class="nav-link-c">
+              <nuxt-link to="/about">About</nuxt-link>
             </li>
           </ul>
         </div>

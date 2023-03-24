@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link to="'/'">
+  <nuxt-link to="/">
     <img src="/logo.svg" alt="Half Price Packaging Logo" class="hpp-logo"
   /></nuxt-link>
 </template>

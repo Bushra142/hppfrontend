@@ -23,7 +23,7 @@
 
         <VueSlickCarousel ref="carouselInsta" v-bind="slickOptions2">
           <div class="insta-slide">
-            <nuxt-link to="'/'" draggable="false">
+            <nuxt-link to="/" draggable="false">
               <img
                 src="~/assets/images/card.webp"
                 alt="Card"
@@ -32,7 +32,7 @@
             </nuxt-link>
           </div>
           <div class="insta-slide">
-            <nuxt-link to="'/'" draggable="false">
+            <nuxt-link to="/" draggable="false">
               <img
                 src="~/assets/images/card.webp"
                 alt="Card"
@@ -41,7 +41,7 @@
             </nuxt-link>
           </div>
           <div class="insta-slide">
-            <nuxt-link to="'/'" draggable="false">
+            <nuxt-link to="/" draggable="false">
               <img
                 src="~/assets/images/card.webp"
                 alt="Card"
@@ -50,7 +50,7 @@
             </nuxt-link>
           </div>
           <div class="insta-slide">
-            <nuxt-link to="'/'" draggable="false">
+            <nuxt-link to="/" draggable="false">
               <img
                 src="~/assets/images/card.webp"
                 alt="Card"
@@ -59,7 +59,7 @@
             </nuxt-link>
           </div>
           <div class="insta-slide">
-            <nuxt-link to="'/'" draggable="false">
+            <nuxt-link to="/" draggable="false">
               <img
                 src="~/assets/images/card.webp"
                 alt="Card"
@@ -68,7 +68,7 @@
             </nuxt-link>
           </div>
           <div class="insta-slide">
-            <nuxt-link to="'/'" draggable="false">
+            <nuxt-link to="/" draggable="false">
               <img
                 src="~/assets/images/card.webp"
                 alt="Card"
@@ -77,7 +77,7 @@
             </nuxt-link>
           </div>
           <div class="insta-slide">
-            <nuxt-link to="'/'" draggable="false">
+            <nuxt-link to="/" draggable="false">
               <img
                 src="~/assets/images/card.webp"
                 alt="Card"
@@ -86,7 +86,7 @@
             </nuxt-link>
           </div>
           <div class="insta-slide">
-            <nuxt-link to="'/'" draggable="false">
+            <nuxt-link to="/" draggable="false">
               <img
                 src="~/assets/images/card.webp"
                 alt="Card"

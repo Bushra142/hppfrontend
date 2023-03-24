@@ -23,43 +23,43 @@
       </div>
       <VueSlickCarousel ref="carouselIndustry" v-bind="slickOptions">
         <div class="industry-slide">
-          <nuxt-link to="'/'" draggable="false">
+          <nuxt-link to="/" draggable="false">
             <img src="~/assets/images/card.webp" alt="Card" draggable="false" />
             <h4 class="slide-title">Hello</h4>
           </nuxt-link>
         </div>
         <div class="industry-slide">
-          <nuxt-link to="'/'" draggable="false">
+          <nuxt-link to="/" draggable="false">
             <img src="~/assets/images/card.webp" alt="Card" draggable="false" />
             <h4 class="slide-title">Hello</h4>
           </nuxt-link>
         </div>
         <div class="industry-slide">
-          <nuxt-link to="'/'" draggable="false">
+          <nuxt-link to="/" draggable="false">
             <img src="~/assets/images/card.webp" alt="Card" draggable="false" />
             <h4 class="slide-title">Hello</h4>
           </nuxt-link>
         </div>
         <div class="industry-slide">
-          <nuxt-link to="'/'" draggable="false">
+          <nuxt-link to="/" draggable="false">
             <img src="~/assets/images/card.webp" alt="Card" draggable="false" />
             <h4 class="slide-title">Hello</h4>
           </nuxt-link>
         </div>
         <div class="industry-slide">
-          <nuxt-link to="'/'" draggable="false">
+          <nuxt-link to="/" draggable="false">
             <img src="~/assets/images/card.webp" alt="Card" draggable="false" />
             <h4 class="slide-title">Hello</h4>
           </nuxt-link>
         </div>
         <div class="industry-slide">
-          <nuxt-link to="'/'" draggable="false">
+          <nuxt-link to="/" draggable="false">
             <img src="~/assets/images/card.webp" alt="Card" draggable="false" />
             <h4 class="slide-title">Hello</h4>
           </nuxt-link>
         </div>
         <div class="industry-slide">
-          <nuxt-link to="'/'" draggable="false">
+          <nuxt-link to="/" draggable="false">
             <img src="~/assets/images/card.webp" alt="Card" draggable="false" />
             <h4 class="slide-title">Hello</h4>
           </nuxt-link>

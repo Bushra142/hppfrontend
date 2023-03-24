@@ -18,56 +18,56 @@
       </div>
       <div class="industry-cards">
         <div class="industry-card">
-          <nuxt-link to="'/'">
+          <nuxt-link to="/">
             <img src="~/assets/images/card.webp" alt="Card" />
             <h4 class="slide-title">Folding Carton Boxes</h4>
             <p>Standard cardstock boxes made from thin, flexible paperboard</p>
           </nuxt-link>
         </div>
         <div class="industry-card">
-          <nuxt-link to="'/'">
+          <nuxt-link to="/">
             <img src="~/assets/images/card.webp" alt="Card" />
             <h4 class="slide-title">Folding Carton Boxes</h4>
             <p>Standard cardstock boxes made from thin, flexible paperboard</p>
           </nuxt-link>
         </div>
         <div class="industry-card">
-          <nuxt-link to="'/'">
+          <nuxt-link to="/">
             <img src="~/assets/images/card.webp" alt="Card" />
             <h4 class="slide-title">Folding Carton Boxes</h4>
             <p>Standard cardstock boxes made from thin, flexible paperboard</p>
           </nuxt-link>
         </div>
         <div class="industry-card">
-          <nuxt-link to="'/'">
+          <nuxt-link to="/">
             <img src="~/assets/images/card.webp" alt="Card" />
             <h4 class="slide-title">Folding Carton Boxes</h4>
             <p>Standard cardstock boxes made from thin, flexible paperboard</p>
           </nuxt-link>
         </div>
         <div class="industry-card">
-          <nuxt-link to="'/'">
+          <nuxt-link to="/">
             <img src="~/assets/images/card.webp" alt="Card" />
             <h4 class="slide-title">Folding Carton Boxes</h4>
             <p>Standard cardstock boxes made from thin, flexible paperboard</p>
           </nuxt-link>
         </div>
         <div class="industry-card">
-          <nuxt-link to="'/'">
+          <nuxt-link to="/">
             <img src="~/assets/images/card.webp" alt="Card" />
             <h4 class="slide-title">Folding Carton Boxes</h4>
             <p>Standard cardstock boxes made from thin, flexible paperboard</p>
           </nuxt-link>
         </div>
         <div class="industry-card">
-          <nuxt-link to="'/'">
+          <nuxt-link to="/">
             <img src="~/assets/images/card.webp" alt="Card" />
             <h4 class="slide-title">Folding Carton Boxes</h4>
             <p>Standard cardstock boxes made from thin, flexible paperboard</p>
           </nuxt-link>
         </div>
         <div class="industry-card">
-          <nuxt-link to="'/'">
+          <nuxt-link to="/">
             <img src="~/assets/images/card.webp" alt="Card" />
             <h4 class="slide-title">Looking for something eles?</h4>
             <p>Standard cardstock boxes made from thin, flexible paperboard</p>

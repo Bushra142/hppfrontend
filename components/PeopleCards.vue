@@ -19,14 +19,14 @@
           <a href="#!" class="cta-primary small mt-3">Say Hello!</a>
         </div>
         <div class="half-card">
-          <nuxt-link to="'/'" class="p-card">
+          <nuxt-link to="/" class="p-card">
             <p>
               Dedicated account managers who help you from start to finish and
               beyond.
             </p>
             <img src="~/assets/icons/open-box.svg" alt="Open Box Icon" />
           </nuxt-link>
-          <nuxt-link to="'/'" class="p-card">
+          <nuxt-link to="/" class="p-card">
             <p>Find a better price and we’ll beat it by up to 20%.</p>
             <img src="~/assets/icons/mail.svg" alt="Mail Icon" />
           </nuxt-link>
