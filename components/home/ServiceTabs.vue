@@ -22,8 +22,8 @@
           </b-tab>
           <b-tab title="Design">
             <service-tab-card />
-            <service-tab-card
-          /></b-tab>
+            <service-tab-card />
+          </b-tab>
           <b-tab title="Prototype">
             <service-tab-card /> <service-tab-card /> <service-tab-card />
           </b-tab>

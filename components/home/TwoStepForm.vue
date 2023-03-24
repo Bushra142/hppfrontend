@@ -15,15 +15,15 @@
             <b-tab title="1. Project Info" active
               ><b-card-text>
                 <div class="text-right">
-                  <a href="#!" @click="tabIndex++" class="cta-primary  m-3"
+                  <a href="#!" @click="tabIndex++" class="cta-primary m-3"
                     >Proceed</a
                   >
                 </div>
               </b-card-text></b-tab
             >
             <b-tab title="2. Contact Info"
-              ><b-card-text>aaaaa</b-card-text
-            ></b-tab>
+              ><b-card-text>aaaaa</b-card-text></b-tab
+            >
           </b-tabs>
         </b-card>
       </div>

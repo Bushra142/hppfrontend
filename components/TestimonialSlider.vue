@@ -10,19 +10,19 @@
       <client-only>
         <div class="flickity-controls">
           <img
-            @click="previous()"
+            @click="previous1()"
             src="~/assets/icons/arrow-left.svg"
             alt="Slide Back"
             class="custom-arrow"
           />
           <img
-            @click="next()"
+            @click="next1()"
             src="~/assets/icons/arrow-right.svg"
             alt="Slide Next"
             class="custom-arrow"
           />
         </div>
-        <VueSlickCarousel ref="carouselTesty" v-bind="slickOptions">
+        <VueSlickCarousel ref="carouselTesty" v-bind="slickOptions1">
           <div class="testimonial-slide">
             <img src="~/assets/images/citrix.svg" alt="Citrix Logo" />
             <p class="testi-text">
@@ -136,7 +136,7 @@ export default {
   name: "TestimonialSlider",
   data() {
     return {
-      slickOptions: {
+      slickOptions1: {
         slidesToShow: 4.2,
         centerMode: false,
         adaptiveHeight: true,
@@ -148,11 +148,11 @@ export default {
     };
   },
   methods: {
-    next() {
+    next1() {
       this.$refs.carouselTesty.next();
     },
 
-    previous() {
+    previous1() {
       this.$refs.carouselTesty.prev();
     },
   },

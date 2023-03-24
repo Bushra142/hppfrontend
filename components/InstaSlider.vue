@@ -8,22 +8,22 @@
       <client-only>
         <div class="flickity-controls">
           <img
-            @click="previous()"
+            @click="previous2()"
             src="~/assets/icons/arrow-left.svg"
             alt="Slide Back"
             class="custom-arrow"
           />
           <img
-            @click="next()"
+            @click="next2()"
             src="~/assets/icons/arrow-right.svg"
             alt="Slide Next"
             class="custom-arrow"
           />
         </div>
 
-        <VueSlickCarousel ref="carouselInsta" v-bind="slickOptions">
+        <VueSlickCarousel ref="carouselInsta" v-bind="slickOptions2">
           <div class="insta-slide">
-            <nuxt-link to="/" draggable="false">
+            <nuxt-link to="'/'" draggable="false">
               <img
                 src="~/assets/images/card.webp"
                 alt="Card"
@@ -32,7 +32,7 @@
             </nuxt-link>
           </div>
           <div class="insta-slide">
-            <nuxt-link to="/" draggable="false">
+            <nuxt-link to="'/'" draggable="false">
               <img
                 src="~/assets/images/card.webp"
                 alt="Card"
@@ -41,7 +41,7 @@
             </nuxt-link>
           </div>
           <div class="insta-slide">
-            <nuxt-link to="/" draggable="false">
+            <nuxt-link to="'/'" draggable="false">
               <img
                 src="~/assets/images/card.webp"
                 alt="Card"
@@ -50,7 +50,7 @@
             </nuxt-link>
           </div>
           <div class="insta-slide">
-            <nuxt-link to="/" draggable="false">
+            <nuxt-link to="'/'" draggable="false">
               <img
                 src="~/assets/images/card.webp"
                 alt="Card"
@@ -59,7 +59,7 @@
             </nuxt-link>
           </div>
           <div class="insta-slide">
-            <nuxt-link to="/" draggable="false">
+            <nuxt-link to="'/'" draggable="false">
               <img
                 src="~/assets/images/card.webp"
                 alt="Card"
@@ -68,7 +68,7 @@
             </nuxt-link>
           </div>
           <div class="insta-slide">
-            <nuxt-link to="/" draggable="false">
+            <nuxt-link to="'/'" draggable="false">
               <img
                 src="~/assets/images/card.webp"
                 alt="Card"
@@ -77,7 +77,7 @@
             </nuxt-link>
           </div>
           <div class="insta-slide">
-            <nuxt-link to="/" draggable="false">
+            <nuxt-link to="'/'" draggable="false">
               <img
                 src="~/assets/images/card.webp"
                 alt="Card"
@@ -86,7 +86,7 @@
             </nuxt-link>
           </div>
           <div class="insta-slide">
-            <nuxt-link to="/" draggable="false">
+            <nuxt-link to="'/'" draggable="false">
               <img
                 src="~/assets/images/card.webp"
                 alt="Card"
@@ -105,7 +105,7 @@ export default {
   name: "InstaSlider",
   data() {
     return {
-      slickOptions: {
+      slickOptions2: {
         slidesToShow: 4,
         centerMode: true,
         adaptiveHeight: true,
@@ -116,11 +116,11 @@ export default {
     };
   },
   methods: {
-    next() {
+    next2() {
       this.$refs.carouselInsta.next();
     },
 
-    previous() {
+    previous2() {
       this.$refs.carouselInsta.prev();
     },
   },

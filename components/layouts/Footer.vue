@@ -21,10 +21,10 @@
           <div class="contact-box">
             <h4>Quick Links</h4>
             <ul class="footer-menu">
-              <li><nuxt-link to="/">Rigid Boxes</nuxt-link></li>
-              <li><nuxt-link to="/">Rigid Boxes</nuxt-link></li>
-              <li><nuxt-link to="/">Rigid Boxes</nuxt-link></li>
-              <li><nuxt-link to="/">Rigid Boxes</nuxt-link></li>
+              <li><nuxt-link to="'/'">Rigid Boxes</nuxt-link></li>
+              <li><nuxt-link to="'/'">Rigid Boxes</nuxt-link></li>
+              <li><nuxt-link to="'/'">Rigid Boxes</nuxt-link></li>
+              <li><nuxt-link to="'/'">Rigid Boxes</nuxt-link></li>
             </ul>
           </div>
           <div class="contact-box">
@@ -40,19 +40,19 @@
           <div class="contact-box">
             <h4>Quick Links</h4>
             <ul class="footer-menu">
-              <li><nuxt-link to="/">Rigid Boxes</nuxt-link></li>
-              <li><nuxt-link to="/">Rigid Boxes</nuxt-link></li>
-              <li><nuxt-link to="/">Rigid Boxes</nuxt-link></li>
-              <li><nuxt-link to="/">Rigid Boxes</nuxt-link></li>
+              <li><nuxt-link to="'/'">Rigid Boxes</nuxt-link></li>
+              <li><nuxt-link to="'/'">Rigid Boxes</nuxt-link></li>
+              <li><nuxt-link to="'/'">Rigid Boxes</nuxt-link></li>
+              <li><nuxt-link to="'/'">Rigid Boxes</nuxt-link></li>
             </ul>
           </div>
           <div class="contact-box">
             <h4>Quick Links</h4>
             <ul class="footer-menu">
-              <li><nuxt-link to="/">Rigid Boxes</nuxt-link></li>
-              <li><nuxt-link to="/">Rigid Boxes</nuxt-link></li>
-              <li><nuxt-link to="/">Rigid Boxes</nuxt-link></li>
-              <li><nuxt-link to="/">Rigid Boxes</nuxt-link></li>
+              <li><nuxt-link to="'/'">Rigid Boxes</nuxt-link></li>
+              <li><nuxt-link to="'/'">Rigid Boxes</nuxt-link></li>
+              <li><nuxt-link to="'/'">Rigid Boxes</nuxt-link></li>
+              <li><nuxt-link to="'/'">Rigid Boxes</nuxt-link></li>
             </ul>
           </div>
         </div>

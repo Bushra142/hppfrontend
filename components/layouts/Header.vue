@@ -1,112 +1,128 @@
 <template>
   <header>
-     <div class="desktop-header">
+    <div class="desktop-header">
       <div class="top-bar-container">
-      <div class="top-bar page-width ">
-        <div class="menu">
-          <ul>
-            <li><NuxtLink to="/tuck">Tuck Boxes</NuxtLink></li>
-            <li><NuxtLink to="/tuck">Mailer Boxes</NuxtLink></li>
-            <li><NuxtLink to="/tuck">CBD Boxes</NuxtLink></li>
-            <li><NuxtLink to="/tuck">Cosmetic Boxes</NuxtLink></li>
-          </ul>
+        <div class="top-bar page-width">
+          <div class="menu">
+            <ul>
+              <li><nuxt-link to="'/tuck'">Tuck Boxes</nuxt-link></li>
+              <li><nuxt-link to="'/tuck'">Mailer Boxes</nuxt-link></li>
+              <li><nuxt-link to="'/tuck'">CBD Boxes</nuxt-link></li>
+              <li><nuxt-link to="'/tuck'">Cosmetic Boxes</nuxt-link></li>
+            </ul>
+          </div>
+          <div class="cta">
+            <a href="#!" class="cta-primary small"
+              >Book a Call with Packaging Expert</a
+            >
+          </div>
         </div>
-        <div class="cta">
-          <a href="#!" class="cta-primary small"
-            >Book a Call with Packaging Expert</a
+      </div>
+      <div class="logo-bar page-width">
+        <div class="logo">
+          <hpp-logo />
+          <search />
+        </div>
+        <div class="contacts">
+          <a href="tel: 866-225-2112" class="color-primary text-semi">
+            866-225-2112
+          </a>
+          |
+          <a
+            href="mailto:orders@halfpricepackaging.com"
+            class="color-primary text-semi"
+            >orders@halfpricepackaging.com</a
           >
         </div>
       </div>
-    </div>
-    <div class="logo-bar page-width">
-      <div class="logo">
-        <HPPLogo />
-        <search />
-      </div>
-      <div class="contacts">
-        <a href="tel: 866-225-2112" class="color-primary text-semi">
-          866-225-2112
-        </a>
-        |
-        <a
-          href="mailto:orders@halfpricepackaging.com"
-          class="color-primary text-semi"
-          >orders@halfpricepackaging.com</a
-        >
-      </div>
-    </div>
-    <div class="menu-bar page-width">
-      <div class="menu">
-        <ul class="nav-custom">
-          <li class="nav-link-c">Industries</li>
-          <li class="nav-link-c">Shapes & Style</li>
-          <li class="nav-link-c">
-            <NuxtLink to="/material">Material</NuxtLink>
-          </li>
-          <li class="nav-link-c">
-            <NuxtLink to="/portfolio">Portfolio</NuxtLink>
-          </li>
-          <li class="nav-link-c"><NuxtLink to="/blog">Insights</NuxtLink></li>
-          <li class="nav-link-c">
-            <NuxtLink to="/finishes">Premium Finishes</NuxtLink>
-          </li>
-          <li class="nav-link-c">
-            <NuxtLink to="/about">About</NuxtLink>
-          </li>
-        </ul>
-      </div>
-      <div class="icons">
-        <a href="#!" class="social-icon"><img src="~/assets/icons/fb.svg" /></a>
-        <a href="#!" class="social-icon"><img src="~/assets/icons/tw.svg" /></a>
-        <a href="#!" class="social-icon"><img src="~/assets/icons/ig.svg" /></a>
-        <a href="#!" class="social-icon"><img src="~/assets/icons/ln.svg" /></a>
-        <a href="#!" class="social-icon"><img src="~/assets/icons/yt.svg" /></a>
+      <div class="menu-bar page-width">
+        <div class="menu">
+          <ul class="nav-custom">
+            <li class="nav-link-c">Industries</li>
+            <li class="nav-link-c">Shapes & Style</li>
+            <li class="nav-link-c">
+              <nuxt-link to="'/material'">Material</nuxt-link>
+            </li>
+            <li class="nav-link-c">
+              <nuxt-link to="'/portfolio'">Portfolio</nuxt-link>
+            </li>
+            <li class="nav-link-c"><NuxtLink to="/blog">Insights</NuxtLink></li>
+            <li class="nav-link-c">
+              <nuxt-link to="'/finishes'">Premium Finishes</nuxt-link>
+            </li>
+            <li class="nav-link-c">
+              <nuxt-link to="'/about'">About</nuxt-link>
+            </li>
+          </ul>
+        </div>
+        <div class="icons">
+          <a href="#!" class="social-icon"
+            ><img src="~/assets/icons/fb.svg"
+          /></a>
+          <a href="#!" class="social-icon"
+            ><img src="~/assets/icons/tw.svg"
+          /></a>
+          <a href="#!" class="social-icon"
+            ><img src="~/assets/icons/ig.svg"
+          /></a>
+          <a href="#!" class="social-icon"
+            ><img src="~/assets/icons/ln.svg"
+          /></a>
+          <a href="#!" class="social-icon"
+            ><img src="~/assets/icons/yt.svg"
+          /></a>
 
-        <a href="#!" class="cta-primary outlined small">Get a Quote</a>
+          <a href="#!" class="cta-primary outlined small">Get a Quote</a>
+        </div>
       </div>
     </div>
-     </div>
-     <div class="mobile-menu">
+    <div class="mobile-menu">
       <div class="logo-bar page-width">
-      <div class="logo">
-        <HPPLogo />
-      </div>
-      <div class="menu">
-        <b-button v-b-toggle.sidebar-no-header class="side-bar-icon"><img
-            src="~/assets/icons/menuicon.svg"
-            alt="Menu"
+        <div class="logo">
+          <hpp-logo />
+        </div>
+        <div class="menu">
+          <b-button v-b-toggle.sidebar-no-header class="side-bar-icon"
+            ><img src="~/assets/icons/menuicon.svg" alt="Menu"
           /></b-button>
 
-      <b-sidebar id="sidebar-no-header" aria-labelledby="sidebar-no-header-title" no-header shadow>
-      <template #default="{ hide }">
-        <div class="p-3">
-          <a href="#!" class="cta-primary outlined small">Get a Quote</a>
-          
-          <nav class="mb-3">
-            <b-nav vertical>
-              <b-nav-item active @click="hide">Active</b-nav-item>
-              <b-nav-item href="#link-1" @click="hide">Link</b-nav-item>
-              <b-nav-item href="#link-2" @click="hide">Another Link</b-nav-item>
-            </b-nav>
-          </nav>
-          <b-button variant="primary" block @click="hide">Close Sidebar</b-button>
+          <b-sidebar
+            id="sidebar-no-header"
+            aria-labelledby="sidebar-no-header-title"
+            no-header
+            shadow
+          >
+            <template #default="{ hide }">
+              <div class="p-3">
+                <a href="#!" class="cta-primary outlined small">Get a Quote</a>
+
+                <nav class="mb-3">
+                  <b-nav vertical>
+                    <b-nav-item active @click="hide">Active</b-nav-item>
+                    <b-nav-item href="#link-1" @click="hide">Link</b-nav-item>
+                    <b-nav-item href="#link-2" @click="hide"
+                      >Another Link</b-nav-item
+                    >
+                  </b-nav>
+                </nav>
+                <b-button variant="primary" block @click="hide"
+                  >Close Sidebar</b-button
+                >
+              </div>
+            </template>
+          </b-sidebar>
         </div>
-      </template>
-    </b-sidebar>
-          
+      </div>
     </div>
-    </div>
-    
-     </div>
-    
   </header>
 </template>
 
 <script>
+import HppLogo from "../HppLogo.vue";
 import Search from "./Search.vue";
 
 export default {
-  components: { Search },
+  components: { Search, HppLogo },
   name: "HeaderMain",
   data: () => {
     return {
@@ -126,7 +142,6 @@ export default {
     };
   },
   methods: {
-
     openService() {
       (this.solutionOpen = false),
         (this.industryOpen = false),
@@ -229,10 +244,10 @@ export default {
   }
 }
 
-.mobile-menu{
+.mobile-menu {
   display: none;
 }
-.desktop-header{
+.desktop-header {
   display: block;
 }
 
@@ -292,66 +307,65 @@ export default {
   width: 85vw !important;
 }
 .menu-container {
-    padding: 20px;
-    padding-top: 120px;
-    .menu {
-      list-style-type: none;
-      .menu-item {
-        font-size: 28px;
-        margin-bottom: 15px;
-        position: relative;
-        a {
-          color: black;
-          display: block;
-          cursor: pointer;
-        }
-        img {
-          width: 12px;
-          box-sizing: content-box;
-          padding-left: 50px;
-          cursor: pointer;
-        }
+  padding: 20px;
+  padding-top: 120px;
+  .menu {
+    list-style-type: none;
+    .menu-item {
+      font-size: 28px;
+      margin-bottom: 15px;
+      position: relative;
+      a {
+        color: black;
+        display: block;
+        cursor: pointer;
       }
-      .menu-item.sub-menu-item {
-        display: flex;
-        justify-content: space-between;
-        a {
-          flex: 1;
-        }
-      }
-      .menu-item.sub-menu-item.services {
-        display: flex;
-        justify-content: space-between;
-        a {
-          flex: 0;
-        }
-        img {
-          width: 12px;
-        }
+      img {
+        width: 12px;
+        box-sizing: content-box;
+        padding-left: 50px;
+        cursor: pointer;
       }
     }
-  }
-
-@media (max-width:480px) {
-  .desktop-header{
-    display: none;
-  }
-.mobile-menu{
-  display: block;
-  margin-bottom: 25px;
-
-  .menu{
-    .side-bar-icon{
-      background: none;
-      border: none;
+    .menu-item.sub-menu-item {
+      display: flex;
+      justify-content: space-between;
+      a {
+        flex: 1;
+      }
     }
-
-    a{
-      width: 100%;
-      text-align: center;
+    .menu-item.sub-menu-item.services {
+      display: flex;
+      justify-content: space-between;
+      a {
+        flex: 0;
+      }
+      img {
+        width: 12px;
+      }
     }
   }
 }
-    
+
+@media (max-width: 480px) {
+  .desktop-header {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+    margin-bottom: 25px;
+
+    .menu {
+      .side-bar-icon {
+        background: none;
+        border: none;
+      }
+
+      a {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
 }
 </style>

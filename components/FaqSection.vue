@@ -78,7 +78,7 @@
         <img src="~/assets/images/author.webp" />
         <p>
           Have other questions for us?
-          <nuxt-link to="/">Ask our experts directly!</nuxt-link>
+          <nuxt-link to="'/'">Ask our experts directly!</nuxt-link>
         </p>
       </div>
     </div>
